@@ -1,3 +1,4 @@
+# Copyright (c) 2026 PYPTO Contributors
 # SPDX-License-Identifier: MIT
 """
 Script to check that all source files and documentation are in English only.

@@ -1,0 +1,53 @@
+# Copyright (c) 2026 PYPTO Contributors
+# SPDX-License-Identifier: MIT
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools==80.10.2",
+    "wheel",
+    "nanobind>=2.0.0",
+]
+
+[project]
+name = "pypto-tile"
+dynamic = ["version"]
+description = "Pypto Tile Compiler"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "tsung.li", email = "lidongsheng4@huawei.com" }
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Compilers",
+]
+
+dependencies = [
+  "typing-extensions",
+]
+
+[project.urls]
+Homepage = "https://github.com/tsung-li/pypto_tile"
+Repository = "https://github.com/tsung-li/pypto_tile.git"
+"Bug Tracker" = "https://github.com/tsung-li/pypto_tile/issues"
+
+[tool.setuptools.dynamic]
+version = {file = "src/pypto/tile/VERSION"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = [
+    "pypto.tile",
+]
+
+[tool.setuptools.package-data]
+"pypto.tile" = ["VERSION"]
+
+
+[tool.uv]
+managed = true

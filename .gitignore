@@ -1,0 +1,20 @@
+__pycache__/
+
+# C extensions
+*.so
+*.egg-info/
+
+build/
+wheels/
+
+# Sphinx documentation
+docs/_build/
+
+# Environments
+.venv
+
+# Visual Studio Code
+.vscode/
+
+# Ruff stuff:
+.ruff_cache/
