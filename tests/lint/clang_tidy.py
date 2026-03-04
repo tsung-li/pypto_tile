@@ -1,3 +1,4 @@
+# Copyright (c) 2026 PYPTO Contributors
 # SPDX-License-Identifier: MIT
 
 """Run clang-tidy on PyPTO C/C++ source files.

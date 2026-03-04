@@ -1,3 +1,4 @@
+# Copyright (c) 2026 PYPTO Contributors
 # SPDX-License-Identifier: MIT
 """
 Script to check copyright headers in source files.
@@ -10,11 +11,14 @@ from pathlib import Path
 
 # Define the expected headers
 PY_HEADER = """
+# Copyright (c) 2026 PYPTO Contributors
 # SPDX-License-Identifier: MIT
 """.strip()
 
 C_HEADER = """
-/* SPDX-License-Identifier: MIT */
+/* Copyright (c) 2026 PYPTO Contributors
+ * SPDX-License-Identifier: MIT
+ */
 """.strip()
 
 # File extension to header mapping
